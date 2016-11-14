@@ -1,0 +1,6 @@
+#!/bin/bash
+case "$(xset -q|grep LED| awk '{ print $10 }')" in
+	"00000000") echo "En" ;;
+	"00001000") echo "Ru" ;;
+	*) KBD="unknown" ;;
+esac
