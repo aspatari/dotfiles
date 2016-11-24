@@ -46,25 +46,25 @@ client.background       $bg-color
 #------------------------------------------------------------------------------#
 #------------------------------[ i3 Bar ]--------------------------------------#
 #------------------------------------------------------------------------------#
-
+#exec_always --no-startup-id $HOME/.config/lemonbuddy/launch.sh
 bar {
 	status_command i3blocks -c ~/.i3/i3blocks.conf
     font xft:Cantarell, Awesome 12
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
+### please set your primary output first. Example: 'xrandr --output eDP1 ###--primary'
+##	tray_output primary
+##	tray_output eDP1
 
-	bindsym button4 nop
+    bindsym button4 nop
 	bindsym button5 nop
 
   colors
   {
-    background $bar_bgc
+     background $bar_bgc
 	  separator #757575
 		#                  border             background         text
 		focused_workspace  $bar_border        $bar_bgc           $active_text
 		inactive_workspace $bar_border        $bar_bgc           $inactive_text
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+     	urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
 	}
 }
 
@@ -407,8 +407,9 @@ exec /home/artur/Data/dotfiles/home_one.sh
 ################################################################################
 
 # Set inner/outer gaps
-gaps inner 10
+gaps inner 5
 gaps outer -4
+
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>

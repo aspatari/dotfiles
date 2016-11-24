@@ -19,8 +19,8 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 # Symfony plugins
 #antigen bundle mnapoli/zsh-symfony-console-plugin
-antigen bundle symfony2
-
+#antigen bundle symfony2
+antigen bundle voronkovich/symfony.plugin.zsh
 
 # Load the theme.
 antigen theme agnoster

@@ -200,5 +200,6 @@ rofi.color-window:#212121, #000000, #4caf50
 rofi.color-normal:#212121, #808080, #212121, #4caf50, #ffffff
 rofi.color-active:#212121, #808080, #212121, #4caf50, #ffffff
 rofi.color-urgent:#4caf50, #808080, #4caf50, #4caf50, #ffffff
+
 rofi.kb-accept-entry:!Alt-Tab,Return,KP_Enter
 rofi.kb-row-down:Alt-Tab,Down
