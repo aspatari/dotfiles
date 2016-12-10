@@ -1,4 +1,4 @@
-# Created by newuser for 5.2
+
 source /usr/share/zsh/scripts/antigen/antigen.zsh
 
 
@@ -18,8 +18,6 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 
 # Symfony plugins
-#antigen bundle mnapoli/zsh-symfony-console-plugin
-#antigen bundle symfony2
 antigen bundle voronkovich/symfony.plugin.zsh
 
 # Load the theme.

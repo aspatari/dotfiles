@@ -4,6 +4,7 @@
 #Create symlink for .i3
 rm -rf ~/.i3
 ln -s ~/dotfiles/i3/ ~/.i3
+sudo ln -s ~/dotfiles/oblogout.conf /etc/oblogout.conf
 
 
 
