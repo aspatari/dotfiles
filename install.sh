@@ -19,12 +19,12 @@ yaourt -S
  google-chrome 
  pamac 
  pamac-tray-appindicator 
- git-kraken 
+ gitkraken 
  git 
  antigen-git 
  jetbrains-toolbox
  java-environment-common
- 1qbittorrent-git
+ qbittorrent-git
 
 
 

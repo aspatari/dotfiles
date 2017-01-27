@@ -26,6 +26,12 @@ DEFAULT_USER=`whoami`
 
 
 
+# Settings
+#export PATH=$PATH':/root/.gem/ruby/2.4.0/bin'
+#export PATH=$PATH':/home/aspatari/.gem/ruby/2.4.0/bin'
+#export GEM_HOME=$HOME/.gem
+#export GEM_PATH=$HOME/.gem
+
 
 
 # Aliass
