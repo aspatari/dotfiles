@@ -17,29 +17,7 @@ ln -s ~/dotfiles/zshrc ~/.zshrc
 curl https://cdn.rawgit.com/zsh-users/antigen/v1.3.2/bin/antigen.zsh > antigen.zsh
 
 
-yaourt -S 
- zsh
- vim 
- ruby-sass 
- google-chrome  
- gitkraken 
- git 
- antigen-git 
- jetbrains-toolbox
- java-environment-common
- qbittorrent-git
- n1
- valentina-studio 
- franz-bin
- visual-studio-code
- guake-git 
-    
-
-
-
-
-
- composer
+yaourt -S  zsh vim  ruby-sass  google-chrome   gitkraken  git  antigen-git  jetbrains-toolbox java-environment-common qbittorrent-git n1 valentina-studio  franz-bin visual-studio-code guake-git composer
 
 
  plank
