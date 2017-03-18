@@ -1,6 +1,8 @@
 
 source /usr/share/zsh/share/antigen.zsh
+export TERM="xterm-256color"
 
+export POWERLEVEL9K_INSTALLATION_PATH=/home/aspatari/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-bhilburn-SLASH-powerlevel9k.git
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -21,16 +23,8 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle voronkovich/symfony.plugin.zsh
 
 # Load the theme.
-antigen theme agnoster
+antigen theme bhilburn/powerlevel9k powerlevel9k
 DEFAULT_USER=`whoami`
-
-
-
-# Settings
-#export PATH=$PATH':/root/.gem/ruby/2.4.0/bin'
-#export PATH=$PATH':/home/aspatari/.gem/ruby/2.4.0/bin'
-#export GEM_HOME=$HOME/.gem
-#export GEM_PATH=$HOME/.gem
 
 
 
