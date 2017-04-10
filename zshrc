@@ -1,10 +1,10 @@
 
 
 export TERM="xterm-256color"
+export POWERLEVEL9K_INSTALLATION_PATH=~/.antigen/bundles/bhilburn/powerlevel9k
 source /usr/share/zsh/share/antigen.zsh
 
 
-export POWERLEVEL9K_INSTALLATION_PATH=~/.antigen/bundles/bhilburn/powerlevel9k
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
