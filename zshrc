@@ -14,6 +14,7 @@ antigen bundle sudo
 antigen bundle pip
 antigen bundle command-not-found
 antigen bundle extract
+antigen bundle z
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 # Zsh autosuggestions
