@@ -28,7 +28,7 @@ antigen bundle voronkovich/symfony.plugin.zsh
 antigen theme bhilburn/powerlevel9k powerlevel9k
 DEFAULT_USER=`whoami`
 
-
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_jobs history time)
 
 ## =============================================================================
 ##                                 Aliases 
