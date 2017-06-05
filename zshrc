@@ -34,7 +34,7 @@ DEFAULT_USER=`whoami`
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_jobs history time)
 
 ## =============================================================================
-##                                 Aliases 
+##                                 Aliases
 ## =============================================================================
 
 ## ===================== System ================================================
@@ -56,6 +56,21 @@ alias grhh="git reset --hard HEAD"
 alias gcp="git cherry-pick $1"
 
 
+
+## ===================== Django ===================================================
+
+alias pm="python manage.py"
+alias pmrs="python manage.py runserver"
+alias pmm="python manage.py migrate"
+alias pmmm="python manage.py makemigrations"
+# alias pmcs="python manage.py collectstatic --noinput"
+# alias pmdbsh="python manage.py dbshell"
+# alias pmdd="python manage.py dumpdata"
+# alias pmld="python manage.py loaddata"
+# alias pmsh="python manage.py shell"
+# alias pmsm="python manage.py schemamigration"
+# alias pmsync="python manage.py syncdb --noinput"
+# alias pmt="python manage.py test"
 
 
 # Tell antigen that you're done.
