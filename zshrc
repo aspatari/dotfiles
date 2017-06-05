@@ -15,6 +15,9 @@ antigen bundle pip
 antigen bundle command-not-found
 antigen bundle extract
 antigen bundle z
+antigen bundle django
+antigen bundle virtualenv
+antigen bundle pip
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 # Zsh autosuggestions
