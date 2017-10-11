@@ -1,11 +1,10 @@
 
 
 export TERM="xterm-256color"
-export EDITOR='vim'
+export EDITOR='code'
 export POWERLEVEL9K_INSTALLATION_PATH=~/.antigen/bundles/bhilburn/powerlevel9k
 source /usr/share/zsh/share/antigen.zsh
-
-
+source /usr/lib/ruby/gems/2.4.0/gems/tmuxinator-0.9.0/completion/tmuxinator.zsh
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -41,6 +40,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_
 ## ===================== System ================================================
 alias rf="rm -rf"
 alias google-chrome="google-chrome-stable"
+alias ls='ls -1'
 
 ## ===================== Git ===================================================
 alias gi="git init"
