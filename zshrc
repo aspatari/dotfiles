@@ -33,6 +33,13 @@ DEFAULT_USER=`whoami`
 
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_jobs history time)
 
+
+# Virtualenv Wrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+source /usr/bin/virtualenvwrapper.sh
+
 ## =============================================================================
 ##                                 Aliases
 ## =============================================================================
@@ -40,7 +47,6 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_
 ## ===================== System ================================================
 alias rf="rm -rf"
 alias google-chrome="google-chrome-stable"
-alias ls='ls -1'
 
 ## ===================== Git ===================================================
 alias gi="git init"
