@@ -1,7 +1,7 @@
 
 
 export TERM="xterm-256color"
-export EDITOR='code'
+#export EDITOR='code'
 export POWERLEVEL9K_INSTALLATION_PATH=~/.antigen/bundles/bhilburn/powerlevel9k
 source /usr/share/zsh/share/antigen.zsh
 source /usr/lib/ruby/gems/2.4.0/gems/tmuxinator-0.9.0/completion/tmuxinator.zsh
@@ -35,9 +35,11 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_
 
 
 # Virtualenv Wrapper
+
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Projects
-VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages -p python3'
 source /usr/bin/virtualenvwrapper.sh
 
 ## =============================================================================
