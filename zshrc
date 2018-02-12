@@ -48,6 +48,7 @@ source /usr/bin/virtualenvwrapper.sh
 ## ===================== System ================================================
 alias rf="rm -rf"
 alias google-chrome="google-chrome-stable"
+alias run-mailhog="docker run -p 1025:1025 -p 8025:8025 -d mailhog/mailhog"
 
 ## ===================== Git ===================================================
 alias gi="git init"
