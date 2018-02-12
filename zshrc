@@ -4,7 +4,6 @@ export TERM="xterm-256color"
 #export EDITOR='code'
 export POWERLEVEL9K_INSTALLATION_PATH=~/.antigen/bundles/bhilburn/powerlevel9k
 source /usr/share/zsh/share/antigen.zsh
-source /usr/lib/ruby/gems/2.4.0/gems/tmuxinator-0.9.0/completion/tmuxinator.zsh
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -55,8 +54,8 @@ alias gi="git init"
 alias gs="git status"
 alias gd="git diff"
 alias gdh="git diff HEAD"
-alias gc="git clone $1 $2"
-alias gcm="git commit -m "$1""
+#alias gc="git clone $1 $2"
+alias gc="git commit -m "$1""
 alias gaa="git add -A ."
 alias gpo="git push origin $1"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
