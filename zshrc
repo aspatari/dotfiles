@@ -19,6 +19,7 @@ antigen bundle virtualenv
 antigen bundle pip
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle steven-omaha/aurman-zsh-completion
 # Zsh autosuggestions
 antigen bundle zsh-users/zsh-autosuggestions
 
