@@ -26,6 +26,7 @@ antigen bundle z
 antigen bundle django
 antigen bundle virtualenv
 antigen bundle pip
+antigen bundle heroku
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle steven-omaha/aurman-zsh-completion
