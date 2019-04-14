@@ -68,9 +68,8 @@ git config --global user.email "artur.spatari@gmail.com"
 
 
 
-
-#http://averagelinuxuser.com/10-things-to-do-after-installing-manjaro/
-
+## Enable SSD Trim
+sudo systemctl enable fstrim.timer
 
 # Settings
 
@@ -118,8 +117,24 @@ gsettings set org.cinnamon workspace-expo-view-as-grid true
 ## Plank 
 gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ theme "Plata"
 gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ icon-size 38
-gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/zoom-enabled true
+gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ zoom-enabled true
+gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ dock-items "['nemo.dockitem', 'google-chrome.dockitem', 'jetbrains-pycharm.dockitem', 'visual-studio-code.dockitem', 'GitKraken.dockitem', 'vstudio.dockitem', 'qbittorrent.dockitem', 'vlc.dockitem', 'spotify.dockitem', 'mailspring.dockitem', 'franz.dockitem', 'pamac-manager.dockitem']"
+
+
 
 # Panel Settings
 gsettings set org.cinnamon panels-enabled "['1:0:top']"
 gsettings set org.cinnamon panels-height "['1:24']"
+
+
+# Languages Layout
+gsettings set org.gnome.libgnomekbd.keyboard layouts "['us', 'ru']"
+gsettings set org.gnome.libgnomekbd.keyboard options "['grp	grp:alt_shift_toggle']"
+
+
+## Top Bar
+gsettings set org.cinnamon enabled-applets "['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:separator@cinnamon.org:1', 'panel1:right:3:notifications@cinnamon.org:7', 'panel1:right:1:workspace-switcher@cinnamon.org:8', 'panel1:right:2:separator@cinnamon.org:10', 'panel1:right:6:systray@cinnamon.org:11', 'panel1:right:7:separator@cinnamon.org:12', 'panel1:right:8:removable-drives@cinnamon.org:13', 'panel1:right:9:network@cinnamon.org:14', 'panel1:right:10:sound@cinnamon.org:15', 'panel1:right:11:power@cinnamon.org:16', 'panel1:right:12:inhibit@cinnamon.org:17', 'panel1:right:13:calendar@cinnamon.org:18', 'panel1:right:14:user@cinnamon.org:19', 'panel1:right:5:blueberry@cinnamon.org:20', 'panel1:right:4:keyboard@cinnamon.org:21']"
+
+# Clock 
+gsettings set org.cinnamon.desktop.interface clock-use-24h true
+gsettings set org.cinnamon.desktop.interface first-day-of-week 1
