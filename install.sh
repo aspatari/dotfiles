@@ -79,6 +79,9 @@ gsettings set org.cinnamon.desktop.interface icon-theme 'Flat-Remix-Dark'
 gsettings set org.cinnamon.theme name 'Plata-Noir'
 gsettings set org.cinnamon.desktop.wm.preferences theme 'Plata-Noir'
 gsettings set org.cinnamon.desktop.wm.preferences num-workspaces 4
+### Wallpaper
+gsettings set org.cinnamon.desktop.background picture-uri 'file:///home/aspatari/dotfiles/images/wallpapers/night_city.jpg' 
+
 
 ## Workspace
 gsettings set org.cinnamon.desktop.wm.preferences workspace-names ['browser', 'code', 'chat', 'music']
