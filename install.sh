@@ -8,6 +8,7 @@ pacman-mirrors -g
 sudo pacman -S yay
 
 # update system
+yay -Syua --noconfirm
 # mount DATA
 
 
