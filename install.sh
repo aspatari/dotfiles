@@ -141,3 +141,7 @@ gsettings set org.cinnamon enabled-applets "['panel1:left:0:menu@cinnamon.org:0'
 # Clock 
 gsettings set org.cinnamon.desktop.interface clock-use-24h true
 gsettings set org.cinnamon.desktop.interface first-day-of-week 1
+
+## Nemo
+gsettings set org.nemo.window-state start-with-sidebar false
+gsettings set org.nemo.window-state start-with-status-bar false
