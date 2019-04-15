@@ -63,7 +63,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 
 # Config git
-git config --global user.name "Artur Spatari"                                             128 ↵  10037  23:29:32   
+git config --global user.name "Artur Spatari"
 git config --global user.email "artur.spatari@gmail.com"
 
 
@@ -80,7 +80,7 @@ gsettings set org.cinnamon.theme name 'Plata-Noir'
 gsettings set org.cinnamon.desktop.wm.preferences theme 'Plata-Noir'
 gsettings set org.cinnamon.desktop.wm.preferences num-workspaces 4
 ### Wallpaper
-gsettings set org.cinnamon.desktop.background picture-uri 'file:///home/aspatari/dotfiles/images/wallpapers/night_city.jpg' 
+gsettings set org.cinnamon.desktop.background picture-uri "file:///home/$(whoami)/dotfiles/images/wallpapers/night_city.jpg"   
 
 
 ## Workspace
