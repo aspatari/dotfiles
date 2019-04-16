@@ -84,7 +84,7 @@ gsettings set org.cinnamon.desktop.background picture-uri "file:///home/$(whoami
 
 
 ## Workspace
-gsettings set org.cinnamon.desktop.wm.preferences workspace-names "['browser', 'code', 'chat', 'music']""
+gsettings set org.cinnamon.desktop.wm.preferences workspace-names "['browser', 'code', 'chat', 'music']"
 
 ## Guake
 gsettings set guake.keybindings.global show-hide 'F2'
