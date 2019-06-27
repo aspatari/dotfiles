@@ -48,7 +48,10 @@ spotify \
 playerctl   
 nerd-fonts-complete \
 powerline \
-powerline-fonts
+powerline-fonts \
+docker \
+docker-compose \
+npm
 
 
 ## setup shell
