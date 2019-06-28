@@ -51,7 +51,8 @@ powerline \
 powerline-fonts \
 docker \
 docker-compose \
-npm
+npm \
+postman-bin
 
 
 ## setup shell
