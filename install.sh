@@ -52,14 +52,16 @@ powerline-fonts \
 docker \
 docker-compose \
 npm \
-postman-bin
+postman-bin \
+python-black \
+heroku-cli
 
 
 ## setup shell
 chsh -s /bin/zsh
 ln -s ~/dotfiles/zshrc ~/.zshrc
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-
+ln -s /usr/bin/black /usr/local/bin/black
 
 
 #tmux
