@@ -33,6 +33,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle steven-omaha/aurman-zsh-completion
 # Zsh autosuggestions
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle clvv/fasd
 
  
 # Load the theme.
@@ -91,3 +92,13 @@ alias pmsh="pipenv run python manage.py shell_plus"
 
 # Tell antigen that you're done.
 antigen apply
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
