@@ -67,6 +67,9 @@ ln -s /usr/bin/black /usr/local/bin/black
 ## Set virtualenv path for poetry
 poetry config  settings.virtualenvs.path "$WORKON_HOME"
 
+## Docker add to docker group
+sudo usermod -aG docker aspatari
+
 #tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
