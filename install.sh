@@ -54,7 +54,8 @@ docker-compose \
 npm \
 postman-bin \
 python-black \
-heroku-cli
+heroku-cli \
+poetry \
 
 
 ## setup shell
