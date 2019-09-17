@@ -2,7 +2,6 @@
 
 export TERM="xterm-256color"
 
-
 powerline-daemon -q
 source /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
@@ -34,6 +33,7 @@ antigen bundle steven-omaha/aurman-zsh-completion
 # Zsh autosuggestions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle clvv/fasd
+antigen bundle poetry
 
  
 # Load the theme.
@@ -44,10 +44,9 @@ DEFAULT_USER=`whoami`
 # Virtualenv Wrapper
 
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Projects
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages -p python'
-# source /usr/bin/virtualenvwrapper.sh
+# export PROJECT_HOME=$HOME/Projects
+# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages -p python'
 
 ## =============================================================================
 ##                                 Aliases
