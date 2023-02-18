@@ -1,18 +1,18 @@
-
+powerline-daemon -q
+source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
 
 export TERM="xterm-256color"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+eval "$(starship init zsh)"
 
 
-powerline-daemon -q
-source /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
-
-export POWERLEVEL9K_INSTALLATION_PATH=~/.antigen/bundles/bhilburn/powerlevel9k
-POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_jobs history time)
+# export POWERLEVEL9K_INSTALLATION_PATH=~/.antigen/bundles/bhilburn/powerlevel9k
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_jobs history time)
 
 
-source /usr/share/zsh/share/antigen.zsh
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -34,10 +34,11 @@ antigen bundle steven-omaha/aurman-zsh-completion
 # Zsh autosuggestions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle clvv/fasd
-
+antigen bundle MichaelAquilina/zsh-you-should-use
+antigen bundle supercrabtree/k
  
 # Load the theme.
-antigen theme bhilburn/powerlevel9k powerlevel9k
+# antigen theme bhilburn/powerlevel9k powerlevel9k
 DEFAULT_USER=`whoami`
 
 
@@ -74,31 +75,42 @@ alias gcp="git cherry-pick $1"
 
 ## ===================== Django ===================================================
 
-alias pm="pipenv run python manage.py"
-#alias pmrs="pipenv run python manage.py runserver 0.0.0.0:8000"
-alias pmrs="pipenv run python manage.py runserver_plus 0.0.0.0:8000"
-alias pmm="pipenv run python manage.py migrate"
-alias pmmm="pipenv run python manage.py makemigrations"
-alias pmsh="pipenv run python manage.py shell_plus"
-# alias pmcs="python manage.py collectstatic --noinput"
-# alias pmdbsh="python manage.py dbshell"
-# alias pmdd="python manage.py dumpdata"
-# alias pmld="python manage.py loaddata"
-# alias pmsh="python manage.py shell"
-# alias pmsm="python manage.py schemamigration"
-# alias pmsync="python manage.py syncdb --noinput"
-# alias pmt="python manage.py test"
+alias pm="python manage.py"
+alias pmrs="python manage.py runserver_plus 0.0.0.0:8000"
+alias pmm="python manage.py migrate"
+alias pmmm="python manage.py makemigrations"
+alias pmsh="python manage.py shell_plus"
+
+
+
+alias lg="lazygit"
+alias ld='lazydocker'
+alias ls='exa'
+alias p='poetry run'
+alias pp='poetry run python'
+alias t='poetry run task'
 
 
 # Tell antigen that you're done.
 antigen apply
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
+
+
+
+
+# Created by `userpath` on 2020-04-06 16:46:09
+export PATH="$PATH:/Users/aspatari/.local/bin"
+export PATH="$PATH:/Users/aspatari/go/bin"
+export PATH="/Users/aspatari/Library/Python/3.10/bin:$PATH"
+fpath+=~/.zfunc
+eval 
+ZAPIER_AC_ZSH_SETUP_PATH=/Users/aspatari/Library/Caches/zapier-platform-cli/autocomplete/zsh_setup && test -f $ZAPIER_AC_ZSH_SETUP_PATH && source $ZAPIER_AC_ZSH_SETUP_PATH; # zapier autocomplete setup
+export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.npm/bin:$PATH"
+
+
+# Load stripe 
+fpath=(~/.stripe $fpath)
+autoload -Uz compinit && compinit -iexport PATH="$HOME/.npm/bin:$PATH"
+
+zstyle ':completion:*' menu select
