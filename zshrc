@@ -1,4 +1,5 @@
-
+powerline-daemon -q
+source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
 
 export TERM="xterm-256color"
 source /opt/homebrew/share/antigen/antigen.zsh
@@ -7,10 +8,9 @@ source "/opt/homebrew/opt/spaceship/spaceship.zsh"
 powerline-daemon -q
 source /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
-export POWERLEVEL9K_INSTALLATION_PATH=~/.antigen/bundles/bhilburn/powerlevel9k
-POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_jobs history time)
+# export POWERLEVEL9K_INSTALLATION_PATH=~/.antigen/bundles/bhilburn/powerlevel9k
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_jobs history time)
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -72,20 +72,20 @@ alias gcp="git cherry-pick $1"
 
 ## ===================== Django ===================================================
 
-alias pm="pipenv run python manage.py"
-#alias pmrs="pipenv run python manage.py runserver 0.0.0.0:8000"
-alias pmrs="pipenv run python manage.py runserver_plus 0.0.0.0:8000"
-alias pmm="pipenv run python manage.py migrate"
-alias pmmm="pipenv run python manage.py makemigrations"
-alias pmsh="pipenv run python manage.py shell_plus"
-# alias pmcs="python manage.py collectstatic --noinput"
-# alias pmdbsh="python manage.py dbshell"
-# alias pmdd="python manage.py dumpdata"
-# alias pmld="python manage.py loaddata"
-# alias pmsh="python manage.py shell"
-# alias pmsm="python manage.py schemamigration"
-# alias pmsync="python manage.py syncdb --noinput"
-# alias pmt="python manage.py test"
+alias pm="python manage.py"
+alias pmrs="python manage.py runserver_plus 0.0.0.0:8000"
+alias pmm="python manage.py migrate"
+alias pmmm="python manage.py makemigrations"
+alias pmsh="python manage.py shell_plus"
+
+
+
+alias lg="lazygit"
+alias ld='lazydocker'
+alias ls='exa'
+alias p='poetry run'
+alias pp='poetry run python'
+alias t='poetry run task'
 
 
 # Tell antigen that you're done.
