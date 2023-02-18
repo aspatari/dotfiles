@@ -1,6 +1,8 @@
 
 
 export TERM="xterm-256color"
+source /opt/homebrew/share/antigen/antigen.zsh
+source "/opt/homebrew/opt/spaceship/spaceship.zsh"
 
 powerline-daemon -q
 source /usr/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
@@ -10,8 +12,6 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status root_indicator background_jobs history time)
 
-
-source /usr/share/zsh/share/antigen.zsh
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -37,7 +37,6 @@ antigen bundle poetry
 
  
 # Load the theme.
-antigen theme bhilburn/powerlevel9k powerlevel9k
 DEFAULT_USER=`whoami`
 
 
@@ -92,12 +91,6 @@ alias pmsh="pipenv run python manage.py shell_plus"
 # Tell antigen that you're done.
 antigen apply
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /home/aspatari/.npm/_npx/30320/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
